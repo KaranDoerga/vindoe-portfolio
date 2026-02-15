@@ -4,11 +4,10 @@ export default function AboutTab() {
       <div className="space-y-8">
         {/* Introduction */}
         <section>
-          <h2 className="mb-4 text-2xl font-bold text-gray-900">Hey, I'm Vindoe</h2>
+          <h2 className="mb-4 text-2xl font-bold text-gray-900">Hey, ik ben Karan</h2>
           <p className="text-lg leading-relaxed text-gray-700">
-            I'm a student software developer with a passion for creating intuitive web applications
-            and crafting unique beats. My journey combines the logical world of code with the
-            creative realm of music production.
+            Ik ben een student software developer met een passie voor het creëren van intuïtieve webapplicaties.
+            Naast software ontwikkeling ben ik ook een beatmaker, waarbij ik mijn creativiteit uitdruk in de wereld van muziekproductie.
           </p>
         </section>
 

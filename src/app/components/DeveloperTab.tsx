@@ -11,6 +11,10 @@ const skills = [
   { name: 'Tailwind CSS', category: 'Styling' },
   { name: 'Git', category: 'Tools' },
   { name: 'Node.js', category: 'Backend' },
+  { name: 'Laravel', category: 'Framework' },
+  { name: 'PHP', category: 'Language' },
+  { name: 'MySQL', category: 'Database' },
+  { name: 'Blade', category: 'Template Engine' },
 ]
 
 const projects = [
@@ -22,10 +26,10 @@ const projects = [
     liveUrl: 'https://vindoe.dev',
   },
   {
-    title: 'Project Two',
-    description: 'Description of your second project. Add your real projects here later.',
-    techStack: ['React', 'Node.js', 'Express'],
-    githubUrl: 'https://github.com/vindoe/project2',
+    title: 'Festival Travel System',
+    description: 'A web application for managing travel arrangements for music festivals.',
+    techStack: ['Laravel', 'PHP', 'MySQL', 'Blade'],
+    githubUrl: 'https://github.com/KaranDoerga/ftsproject',
   },
   {
     title: 'Project Three',
@@ -36,10 +40,16 @@ const projects = [
   },
 ]
 
-const education = {
-  school: 'Your University/School Name',
-  program: 'Computer Science / Software Engineering',
+const education1 = {
+  school: 'Windesheim Almere',
+  program: 'Software Development - HBO',
   year: '2024 - Present',
+}
+
+const education2 = {
+  school: 'Hogeschool van Amsterdam',
+  program: 'Software Engineering - HBO',
+  year: '2022 - 2024',
 }
 
 export default function DeveloperTab() {
@@ -69,9 +79,14 @@ export default function DeveloperTab() {
       <section>
         <h2 className="mb-6 text-2xl font-bold text-gray-900">Education</h2>
         <div className="rounded-lg border border-gray-200 bg-white p-6">
-          <h3 className="text-xl font-bold text-gray-900">{education.school}</h3>
-          <p className="mt-2 text-gray-700">{education.program}</p>
-          <p className="mt-1 text-sm text-gray-500">{education.year}</p>
+          <h3 className="text-xl font-bold text-gray-900">{education1.school}</h3>
+          <p className="mt-2 text-gray-700">{education1.program}</p>
+          <p className="mt-1 text-sm text-gray-500">{education1.year}</p>
+        </div>
+        <div className="rounded-lg border border-gray-200 bg-white p-6">
+          <h3 className="text-xl font-bold text-gray-900">{education2.school}</h3>
+          <p className="mt-2 text-gray-700">{education2.program}</p>
+          <p className="mt-1 text-sm text-gray-500">{education2.year}</p>
         </div>
       </section>
     </div>

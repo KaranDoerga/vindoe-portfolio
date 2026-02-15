@@ -1,11 +1,11 @@
 // Social links configuration - user can update these later
 const socialLinks = {
-  github: 'https://github.com/vindoe',
-  linkedin: 'https://linkedin.com/in/vindoe',
-  email: 'mailto:vindoe@example.com',
+  github: 'https://github.com/KaranDoerga',
+  linkedin: 'https://www.linkedin.com/in/karan-doerga/',
+  email: 'mailto:karanv29@hotmail.com',
   youtube: 'https://youtube.com/@vindoe',
-  soundcloud: 'https://soundcloud.com/vindoe',
-  instagram: 'https://instagram.com/vindoe',
+  soundcloud: 'https://soundcloud.com/vindoebeats',
+  instagram: 'https://www.instagram.com/vinesshh__/',
 }
 
 export default function SocialBar() {
