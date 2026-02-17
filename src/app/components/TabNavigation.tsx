@@ -38,15 +38,15 @@ export default function TabNavigation() {
   return (
     <div className="flex min-h-screen flex-col">
       {/* Desktop Tab Navigation */}
-      <nav className="hidden border-b border-gray-200 bg-white md:block">
+      <nav className="hidden border-b border-gray-800 bg-black md:block">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex space-x-8">
             <button
               onClick={() => handleTabClick('developer')}
               className={`border-b-2 px-4 py-4 text-sm font-medium transition-colors ${
                 activeTab === 'developer'
-                  ? 'border-blue-500 text-blue-600'
-                  : 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700'
+                  ? 'border-red-500 text-red-500'
+                  : 'border-transparent text-gray-400 hover:border-gray-600 hover:text-gray-200'
               }`}
             >
               💻 Developer
@@ -55,8 +55,8 @@ export default function TabNavigation() {
               onClick={() => handleTabClick('beats')}
               className={`border-b-2 px-4 py-4 text-sm font-medium transition-colors ${
                 activeTab === 'beats'
-                  ? 'border-blue-500 text-blue-600'
-                  : 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700'
+                  ? 'border-red-500 text-red-500'
+                  : 'border-transparent text-gray-400 hover:border-gray-600 hover:text-gray-200'
               }`}
             >
               🎵 Beats
@@ -65,8 +65,8 @@ export default function TabNavigation() {
               onClick={() => handleTabClick('about')}
               className={`border-b-2 px-4 py-4 text-sm font-medium transition-colors ${
                 activeTab === 'about'
-                  ? 'border-blue-500 text-blue-600'
-                  : 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700'
+                  ? 'border-red-500 text-red-500'
+                  : 'border-transparent text-gray-400 hover:border-gray-600 hover:text-gray-200'
               }`}
             >
               👤 About
@@ -91,7 +91,7 @@ export default function TabNavigation() {
             onClick={() => handleTabClick('developer')}
             className={`flex flex-col items-center py-3 text-xs font-medium transition-colors ${
               activeTab === 'developer'
-                ? 'text-blue-600'
+                ? 'text-red-600'
                 : 'text-gray-500 hover:text-gray-700'
             }`}
           >
@@ -102,7 +102,7 @@ export default function TabNavigation() {
             onClick={() => handleTabClick('beats')}
             className={`flex flex-col items-center py-3 text-xs font-medium transition-colors ${
               activeTab === 'beats'
-                ? 'text-blue-600'
+                ? 'text-red-600'
                 : 'text-gray-500 hover:text-gray-700'
             }`}
           >
@@ -113,7 +113,7 @@ export default function TabNavigation() {
             onClick={() => handleTabClick('about')}
             className={`flex flex-col items-center py-3 text-xs font-medium transition-colors ${
               activeTab === 'about'
-                ? 'text-blue-600'
+                ? 'text-red-600'
                 : 'text-gray-500 hover:text-gray-700'
             }`}
           >

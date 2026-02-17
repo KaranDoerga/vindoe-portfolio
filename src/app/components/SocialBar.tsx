@@ -1,4 +1,4 @@
-// Social links configuration - user can update these later
+// Social links configuration
 const socialLinks = {
   github: 'https://github.com/KaranDoerga',
   linkedin: 'https://www.linkedin.com/in/karan-doerga/',
@@ -19,7 +19,7 @@ export default function SocialBar() {
               href={socialLinks.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-600 transition-colors hover:text-blue-600"
+              className="text-gray-600 transition-colors hover:text-red-600"
               aria-label="GitHub"
             >
               <span className="hidden sm:inline">GitHub</span>
@@ -31,7 +31,7 @@ export default function SocialBar() {
               href={socialLinks.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-600 transition-colors hover:text-blue-600"
+              className="text-gray-600 transition-colors hover:text-red-600"
               aria-label="LinkedIn"
             >
               <span className="hidden sm:inline">LinkedIn</span>
@@ -41,7 +41,7 @@ export default function SocialBar() {
           {socialLinks.email && (
             <a
               href={socialLinks.email}
-              className="text-gray-600 transition-colors hover:text-blue-600"
+              className="text-gray-600 transition-colors hover:text-red-600"
               aria-label="Email"
             >
               Email
