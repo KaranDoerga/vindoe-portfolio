@@ -12,7 +12,7 @@ export default function AboutTab() {
         </section>
 
         {/* Developer Journey */}
-        <section className="rounded-lg border border-gray-200 bg-gray-50 p-6">
+        <section className="rounded-lg border border-green-200 bg-gray-50 p-6">
           <h3 className="mb-3 text-xl font-bold text-gray-900">💻 Developer Journey</h3>
           <p className="leading-relaxed text-gray-700">
             As a student developer, I'm constantly learning and building projects that challenge me
@@ -23,7 +23,7 @@ export default function AboutTab() {
         </section>
 
         {/* Music Journey */}
-        <section className="rounded-lg border border-gray-200 bg-gray-50 p-6">
+        <section className="rounded-lg border border-purple-200 bg-gray-50 p-6">
           <h3 className="mb-3 text-xl font-bold text-gray-900">🎵 Music Production</h3>
           <p className="leading-relaxed text-gray-700">
             Beat making is my creative outlet. I produce beats across various genres, focusing on
@@ -34,7 +34,7 @@ export default function AboutTab() {
         </section>
 
         {/* Current Status & Goals */}
-        <section className="rounded-lg border border-gray-200 bg-gray-50 p-6">
+        <section className="rounded-lg border border-blue-200 bg-gray-50 p-6">
           <h3 className="mb-3 text-xl font-bold text-gray-900">🚀 Current Focus</h3>
           <p className="leading-relaxed text-gray-700">
             Right now, I'm focused on expanding my technical skills while continuing to develop my
@@ -45,7 +45,7 @@ export default function AboutTab() {
         </section>
 
         {/* Call to Action */}
-        <section className="rounded-lg border-2 border-red-200 bg-red-50 p-6 text-center">
+        <section className="rounded-lg border-2 border-orange-200 bg-orange-50 p-6 text-center">
           <h3 className="mb-3 text-xl font-bold text-gray-900">Let's Connect</h3>
           <p className="leading-relaxed text-gray-700">
             I'm always interested in connecting with other developers, musicians, and creators.

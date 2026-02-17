@@ -55,22 +55,22 @@ const education2 = {
 export default function DeveloperTab() {
   return (
     <div className="space-y-12">
-      {/* Skills Section */}
-      <section>
-        <h2 className="mb-6 text-2xl font-bold text-gray-900">Skills & Technologies</h2>
-        <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
-          {skills.map((skill) => (
-            <SkillCard key={skill.name} name={skill.name} category={skill.category} />
-          ))}
-        </div>
-      </section>
-
       {/* Projects Section */}
       <section>
         <h2 className="mb-6 text-2xl font-bold text-gray-900">Featured Projects</h2>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((project) => (
             <ProjectCard key={project.title} {...project} />
+          ))}
+        </div>
+      </section>
+
+      {/* Skills Section */}
+      <section>
+        <h2 className="mb-6 text-2xl font-bold text-gray-900">Skills & Technologies</h2>
+        <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
+          {skills.map((skill) => (
+            <SkillCard key={skill.name} name={skill.name} category={skill.category} />
           ))}
         </div>
       </section>

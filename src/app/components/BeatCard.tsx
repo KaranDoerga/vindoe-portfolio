@@ -3,14 +3,12 @@ import YouTubeEmbed from './YouTubeEmbed'
 type BeatCardProps = {
   title: string
   youtubeId: string
-  description?: string
   tags?: string[]
 }
 
 export default function BeatCard({
   title,
   youtubeId,
-  description,
   tags,
 }: BeatCardProps) {
   return (
@@ -19,9 +17,6 @@ export default function BeatCard({
 
       <div className="mt-4">
         <h3 className="font-bold text-gray-900">{title}</h3>
-        {description && (
-          <p className="mt-1 text-sm text-gray-600">{description}</p>
-        )}
 
         {/* Tags */}
         {tags && tags.length > 0 && (
