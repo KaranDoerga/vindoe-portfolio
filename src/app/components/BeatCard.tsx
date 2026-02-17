@@ -12,11 +12,11 @@ export default function BeatCard({
   tags,
 }: BeatCardProps) {
   return (
-    <div className="group rounded-lg border border-gray-200 bg-gray-50 p-4 transition-all hover:border-red-600 hover:shadow-lg">
+    <div className="group cursor-pointer rounded-lg border border-gray-200 bg-gray-50 p-3 transition-all duration-200 hover:border-red-600 hover:shadow-lg">
       <YouTubeEmbed videoId={youtubeId} title={title} />
 
       <div className="mt-4">
-        <h3 className="font-bold text-gray-900">{title}</h3>
+        <h3 className="text-sm font-bold text-gray-900">{title}</h3>
 
         {/* Tags */}
         {tags && tags.length > 0 && (
