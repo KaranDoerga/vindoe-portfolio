@@ -19,7 +19,7 @@ export default function SocialBar() {
               href={socialLinks.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-600 transition-all duration-200 hover:-translate-y-0.5 hover:text-red-600 focus-visible:rounded focus-visible:ring-2 focus-visible:ring-ring"
+              className="text-gray-600 transition-all duration-200 hover:-translate-y-0.5 hover:text-purple-600 focus-visible:rounded focus-visible:ring-2 focus-visible:ring-ring"
               aria-label="GitHub"
             >
               <svg
@@ -28,6 +28,7 @@ export default function SocialBar() {
                 className="h-7 w-7"
                 aria-hidden="true"
               >
+                <title>GitHub</title>
                 <path
                   fillRule="evenodd"
                   clipRule="evenodd"
@@ -41,23 +42,25 @@ export default function SocialBar() {
               href={socialLinks.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-600 transition-all duration-200 hover:-translate-y-0.5 hover:text-red-600 focus-visible:rounded focus-visible:ring-2 focus-visible:ring-ring"
+              className="text-gray-600 transition-all duration-200 hover:-translate-y-0.5 hover:text-blue-600 focus-visible:rounded focus-visible:ring-2 focus-visible:ring-ring"
               aria-label="LinkedIn"
             >
-              <svg
-                viewBox="0 0 20 20"
+              <svg 
+                xmlns="http://www.w3.org/2000/svg" 
+                viewBox="0 0 24 24"
                 fill="currentColor"
                 className="h-7 w-7"
                 aria-hidden="true"
-              >
-                <path d="M4.5 3C3.12 3 2 4.12 2 5.5S3.12 8 4.5 8 7 6.88 7 5.5 5.88 3 4.5 3zM2 10h5v10H2V10zm8 0h5v1.4c.7-.9 2.1-1.7 3.5-1.7C21.2 9.7 23 11.8 23 15v5h-5v-4.5c0-1.4-.6-2.5-2-2.5s-2 1.1-2 2.5V20h-5V10h.5z" />
+                >
+                <title>LinkedIn</title>
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
               </svg>
             </a>
           )}
           {socialLinks.email && (
             <a
               href={socialLinks.email}
-              className="text-gray-600 transition-all duration-200 hover:-translate-y-0.5 hover:text-red-600 focus-visible:rounded focus-visible:ring-2 focus-visible:ring-ring"
+              className="text-gray-600 transition-all duration-200 hover:-translate-y-0.5 hover:text-blue-600 focus-visible:rounded focus-visible:ring-2 focus-visible:ring-ring"
               aria-label="Email"
             >
               <svg
@@ -71,6 +74,7 @@ export default function SocialBar() {
                 aria-hidden="true"
               >
                 <rect x="2" y="4" width="16" height="12" rx="2" />
+                <title>Email</title>
                 <path d="M2 6l8 5 8-5" />
               </svg>
             </a>
@@ -94,6 +98,7 @@ export default function SocialBar() {
                 className="h-7 w-7"
                 aria-hidden="true"
               >
+                <title>YouTube</title>
                 <path d="M19.615 6.287c-.23-.863-.908-1.541-1.77-1.77C16.287 4 10 4 10 4s-6.287 0-7.845.517c-.863.229-1.541.907-1.77 1.77C0 7.845 0 10 0 10s0 2.155.385 3.713c.229.863.907 1.541 1.77 1.77C3.713 16 10 16 10 16s6.287 0 7.845-.517c.862-.229 1.541-.907 1.77-1.77C20 12.155 20 10 20 10s0-2.155-.385-3.713zM8 12.5V7.5l5.197 2.5L8 12.5z" />
               </svg>
             </a>
@@ -106,13 +111,16 @@ export default function SocialBar() {
               className="text-gray-600 transition-all duration-200 hover:-translate-y-0.5 hover:text-orange-600 focus-visible:rounded focus-visible:ring-2 focus-visible:ring-ring"
               aria-label="SoundCloud"
             >
-              <svg
-                viewBox="0 0 20 20"
+              <svg 
+                role="img" 
+                viewBox="0 0 24 24" 
+                xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"
                 className="h-7 w-7"
                 aria-hidden="true"
               >
-                <path d="M2 10.5l.5 2-.5 2-.5-2 .5-2zm1.5-.5l.5 3-.5 3-.5-3 .5-3zm1.5 0l.5 3.5-.5 3.5-.5-3.5.5-3.5zm1.5.5l.5 3-.5 4-.5-4 .5-3zm1.5 0l.5 3-.5 4.5-.5-4.5.5-3zm1.5-.5l.5 3.5-.5 5-.5-5 .5-3.5zM11 7l.5 6.5-.5 6.5-.5-6.5.5-6.5zm1.5 1l.5 5.5-.5 5.5-.5-5.5.5-5.5zm2-1c0-.5.2-1 .5-1.5.8-.5 1.8-.5 2.5 0s1 1.2 1 2v.5c1.4.3 2.5 1.5 2.5 3 0 1.7-1.3 3-3 3h-8l-.5-6.5L12.5 7z" />
+                <title>SoundCloud</title>
+                <path d="M23.999 14.165c-.052 1.796-1.612 3.169-3.4 3.169h-8.18a.68.68 0 0 1-.675-.683V7.862a.747.747 0 0 1 .452-.724s.75-.513 2.333-.513a5.364 5.364 0 0 1 2.763.755 5.433 5.433 0 0 1 2.57 3.54c.282-.08.574-.121.868-.12.884 0 1.73.358 2.347.992s.948 1.49.922 2.373ZM10.721 8.421c.247 2.98.427 5.697 0 8.672a.264.264 0 0 1-.53 0c-.395-2.946-.22-5.718 0-8.672a.264.264 0 0 1 .53 0ZM9.072 9.448c.285 2.659.37 4.986-.006 7.655a.277.277 0 0 1-.55 0c-.331-2.63-.256-5.02 0-7.655a.277.277 0 0 1 .556 0Zm-1.663-.257c.27 2.726.39 5.171 0 7.904a.266.266 0 0 1-.532 0c-.38-2.69-.257-5.21 0-7.904a.266.266 0 0 1 .532 0Zm-1.647.77a26.108 26.108 0 0 1-.008 7.147.272.272 0 0 1-.542 0 27.955 27.955 0 0 1 0-7.147.275.275 0 0 1 .55 0Zm-1.67 1.769c.421 1.865.228 3.5-.029 5.388a.257.257 0 0 1-.514 0c-.21-1.858-.398-3.549 0-5.389a.272.272 0 0 1 .543 0Zm-1.655-.273c.388 1.897.26 3.508-.01 5.412-.026.28-.514.283-.54 0-.244-1.878-.347-3.54-.01-5.412a.283.283 0 0 1 .56 0Zm-1.668.911c.4 1.268.257 2.292-.026 3.572a.257.257 0 0 1-.514 0c-.241-1.262-.354-2.312-.023-3.572a.283.283 0 0 1 .563 0Z"/>
               </svg>
             </a>
           )}
@@ -137,6 +145,7 @@ export default function SocialBar() {
                 <rect x="2" y="2" width="16" height="16" rx="4" />
                 <circle cx="10" cy="10" r="4" />
                 <circle cx="15" cy="5" r="0.5" fill="currentColor" />
+                <title>Instagram</title>
               </svg>
             </a>
           )}
