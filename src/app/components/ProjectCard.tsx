@@ -14,7 +14,7 @@ export default function ProjectCard({
   liveUrl,
 }: ProjectCardProps) {
   return (
-    <div className="group rounded-lg border border-gray-200 bg-white p-6 transition-all hover:border-blue-400 hover:shadow-lg">
+    <div className="group rounded-lg border border-gray-200 bg-gray-50 p-6 transition-all hover:border-red-600 hover:shadow-lg">
       <h3 className="text-xl font-bold text-gray-900">{title}</h3>
       <p className="mt-2 text-sm text-gray-600 line-clamp-3">{description}</p>
 
@@ -23,7 +23,7 @@ export default function ProjectCard({
         {techStack.map((tech) => (
           <span
             key={tech}
-            className="rounded-full bg-blue-50 px-3 py-1 text-xs font-medium text-blue-600"
+            className="rounded-full bg-red-50 px-3 py-1 text-xs font-medium text-red-600"
           >
             {tech}
           </span>
@@ -38,7 +38,7 @@ export default function ProjectCard({
               href={githubUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm font-medium text-gray-700 transition-colors hover:text-blue-600"
+              className="text-sm font-medium text-gray-700 transition-colors hover:text-red-600"
             >
               GitHub →
             </a>
@@ -48,7 +48,7 @@ export default function ProjectCard({
               href={liveUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm font-medium text-gray-700 transition-colors hover:text-blue-600"
+              className="text-sm font-medium text-gray-700 transition-colors hover:text-red-600"
             >
               Live Demo →
             </a>

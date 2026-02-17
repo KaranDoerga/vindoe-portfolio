@@ -5,7 +5,7 @@ type SkillCardProps = {
 
 export default function SkillCard({ name, category }: SkillCardProps) {
   return (
-    <div className="group rounded-lg border border-gray-200 bg-white p-4 transition-all hover:border-blue-400 hover:shadow-md">
+    <div className="group rounded-lg border border-gray-200 bg-gray-50 p-4 transition-all hover:border-red-600 hover:shadow-md">
       <div className="text-center">
         <h3 className="font-semibold text-gray-900">{name}</h3>
         {category && (

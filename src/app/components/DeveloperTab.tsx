@@ -78,15 +78,17 @@ export default function DeveloperTab() {
       {/* Education Section */}
       <section>
         <h2 className="mb-6 text-2xl font-bold text-gray-900">Education</h2>
-        <div className="rounded-lg border border-gray-200 bg-white p-6">
-          <h3 className="text-xl font-bold text-gray-900">{education1.school}</h3>
-          <p className="mt-2 text-gray-700">{education1.program}</p>
-          <p className="mt-1 text-sm text-gray-500">{education1.year}</p>
-        </div>
-        <div className="rounded-lg border border-gray-200 bg-white p-6">
-          <h3 className="text-xl font-bold text-gray-900">{education2.school}</h3>
-          <p className="mt-2 text-gray-700">{education2.program}</p>
-          <p className="mt-1 text-sm text-gray-500">{education2.year}</p>
+        <div className="space-y-4">
+          <div className="rounded-lg border border-gray-200 bg-gray-50 p-6">
+            <h3 className="text-xl font-bold text-gray-900">{education1.school}</h3>
+            <p className="mt-2 text-gray-700">{education1.program}</p>
+            <p className="mt-1 text-sm text-gray-500">{education1.year}</p>
+          </div>
+          <div className="rounded-lg border border-gray-200 bg-gray-50 p-6">
+            <h3 className="text-xl font-bold text-gray-900">{education2.school}</h3>
+            <p className="mt-2 text-gray-700">{education2.program}</p>
+            <p className="mt-1 text-sm text-gray-500">{education2.year}</p>
+          </div>
         </div>
       </section>
     </div>

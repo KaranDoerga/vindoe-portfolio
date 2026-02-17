@@ -14,7 +14,7 @@ export default function BeatCard({
   tags,
 }: BeatCardProps) {
   return (
-    <div className="group rounded-lg border border-gray-200 bg-white p-4 transition-all hover:border-blue-400 hover:shadow-lg">
+    <div className="group rounded-lg border border-gray-200 bg-gray-50 p-4 transition-all hover:border-red-600 hover:shadow-lg">
       <YouTubeEmbed videoId={youtubeId} title={title} />
 
       <div className="mt-4">
@@ -29,7 +29,7 @@ export default function BeatCard({
             {tags.map((tag) => (
               <span
                 key={tag}
-                className="rounded-full bg-purple-50 px-2 py-1 text-xs font-medium text-purple-600"
+                className="rounded-full bg-red-50 px-2 py-1 text-xs font-medium text-red-600"
               >
                 {tag}
               </span>
