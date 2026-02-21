@@ -9,10 +9,10 @@ import { sendContactEmail } from '../actions/contact'
 
 // Zod validation schema
 const contactSchema = z.object({
-  name: z.string().min(2, 'Name must be at least 2 characters'),
-  email: z.string().email('Please enter a valid email address'),
-  subject: z.string().min(3, 'Subject must be at least 3 characters'),
-  message: z.string().min(10, 'Message must be at least 10 characters'),
+  name: z.string().min(2, 'Vul je naam in'),
+  email: z.string().email('Vul een geldig e-mailadres in'),
+  subject: z.string().min(3, 'Vul een onderwerp in'),
+  message: z.string().min(10, 'Vul een bericht in van minimaal 10 tekens'),
 })
 
 type ContactFormData = z.infer<typeof contactSchema>
@@ -57,7 +57,7 @@ export default function ContactPage() {
         {/* Back Button */}
         <button
           onClick={() => router.push('/')}
-          className="mb-6 flex items-center gap-2 text-gray-600 transition-colors hover:text-gray-900"
+          className="mb-6 flex items-center gap-2 text-gray-600 transition-colors hover:text-gray-900 hover:cursor-pointer"
         >
           <svg
             className="h-5 w-5"
@@ -72,16 +72,16 @@ export default function ContactPage() {
               d="M15 19l-7-7 7-7"
             />
           </svg>
-          <span>Back</span>
+          <span>Terug</span>
         </button>
 
         {/* Page Heading */}
         <div className="mb-8">
           <h1 className="mb-2 text-4xl font-bold text-gray-900">
-            Get in Touch
+            Neem contact op
           </h1>
           <p className="text-gray-600">
-            Have a question or want to work together? Drop me a message!
+            Heb je een vraag of wil je samenwerken? Stuur me een bericht en ik neem zo snel mogelijk contact met je op!
           </p>
         </div>
 
@@ -96,14 +96,14 @@ export default function ContactPage() {
               htmlFor="name"
               className="mb-1 block text-sm font-medium text-gray-700"
             >
-              Name
+              Naam
             </label>
             <input
               {...register('name')}
               type="text"
               id="name"
-              className="w-full rounded-lg border border-gray-200 p-3 transition-all focus:outline-none focus:ring-2 focus:ring-purple-600"
-              placeholder="Your name"
+              className="w-full rounded-lg border border-gray-200 p-3 transition-all focus:outline-none focus:ring-2 focus:ring-purple-600 placeholder:text-gray-300 text-gray-600"
+              placeholder="Jouw naam"
             />
             {errors.name && (
               <p className="mt-1 text-sm text-red-500" role="alert">
@@ -124,7 +124,7 @@ export default function ContactPage() {
               {...register('email')}
               type="email"
               id="email"
-              className="w-full rounded-lg border border-gray-200 p-3 transition-all focus:outline-none focus:ring-2 focus:ring-purple-600"
+              className="w-full rounded-lg border border-gray-200 p-3 transition-all focus:outline-none focus:ring-2 focus:ring-purple-600 placeholder:text-gray-300 text-gray-600"
               placeholder="your.email@example.com"
             />
             {errors.email && (
@@ -140,14 +140,14 @@ export default function ContactPage() {
               htmlFor="subject"
               className="mb-1 block text-sm font-medium text-gray-700"
             >
-              Subject
+              Onderwerp
             </label>
             <input
               {...register('subject')}
               type="text"
               id="subject"
-              className="w-full rounded-lg border border-gray-200 p-3 transition-all focus:outline-none focus:ring-2 focus:ring-purple-600"
-              placeholder="What's this about?"
+              className="w-full rounded-lg border border-gray-200 p-3 transition-all focus:outline-none focus:ring-2 focus:ring-purple-600 placeholder:text-gray-300 text-gray-600"
+              placeholder="Wat is het onderwerp?"
             />
             {errors.subject && (
               <p className="mt-1 text-sm text-red-500" role="alert">
@@ -162,14 +162,14 @@ export default function ContactPage() {
               htmlFor="message"
               className="mb-1 block text-sm font-medium text-gray-700"
             >
-              Message
+              Bericht
             </label>
             <textarea
               {...register('message')}
               id="message"
               rows={6}
-              className="w-full resize-y rounded-lg border border-gray-200 p-3 transition-all focus:outline-none focus:ring-2 focus:ring-purple-600"
-              placeholder="Tell me more..."
+              className="w-full resize-y rounded-lg border border-gray-200 p-3 transition-all focus:outline-none focus:ring-2 focus:ring-purple-600 placeholder:text-gray-300 text-gray-600"
+              placeholder="Vertel me meer..."
             />
             {errors.message && (
               <p className="mt-1 text-sm text-red-500" role="alert">
@@ -182,9 +182,9 @@ export default function ContactPage() {
           <button
             type="submit"
             disabled={isSubmitting}
-            className="w-full rounded-lg bg-purple-600 px-6 py-3 font-medium text-white transition-colors hover:bg-purple-700 disabled:cursor-not-allowed disabled:opacity-50"
+            className="w-full rounded-lg bg-purple-600 px-6 py-3 font-medium text-white transition-colors hover:bg-purple-700 disabled:cursor-not-allowed disabled:opacity-50 hover:cursor-pointer"
           >
-            {isSubmitting ? 'Sending...' : 'Send Message'}
+            {isSubmitting ? 'Verzenden...' : 'Verstuur Bericht'}
           </button>
         </form>
       </div>

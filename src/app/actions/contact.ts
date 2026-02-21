@@ -8,10 +8,10 @@ const resend = new Resend(process.env.RESEND_API_KEY)
 
 // Zod schema for server-side validation (same as client)
 const contactSchema = z.object({
-  name: z.string().min(2, 'Name must be at least 2 characters'),
-  email: z.string().email('Please enter a valid email address'),
-  subject: z.string().min(3, 'Subject must be at least 3 characters'),
-  message: z.string().min(10, 'Message must be at least 10 characters'),
+  name: z.string().min(2, 'Vul je naam in'),
+  email: z.string().email('Vul een geldig e-mailadres in'),
+  subject: z.string().min(3, 'Vul een onderwerp in'),
+  message: z.string().min(10, 'Vul een bericht in van minimaal 10 tekens'),
 })
 
 export async function sendContactEmail(data: unknown) {
