@@ -1,8 +1,11 @@
+'use client'
+
+import Link from 'next/link'
+
 // Social links configuration
 const socialLinks = {
   github: 'https://github.com/KaranDoerga',
   linkedin: 'https://www.linkedin.com/in/karan-doerga/',
-  email: 'mailto:karanv29@hotmail.com',
   youtube: 'https://youtube.com/@vindoe',
   soundcloud: 'https://soundcloud.com/vindoebeats',
   instagram: 'https://www.instagram.com/vinesshh__/',
@@ -57,28 +60,26 @@ export default function SocialBar() {
               </svg>
             </a>
           )}
-          {socialLinks.email && (
-            <a
-              href={socialLinks.email}
-              className="text-gray-600 transition-all duration-200 hover:-translate-y-0.5 hover:text-blue-600 focus-visible:rounded focus-visible:ring-2 focus-visible:ring-ring"
-              aria-label="Email"
+          <Link
+            href="/contact"
+            className="text-gray-600 transition-all duration-200 hover:-translate-y-0.5 hover:text-blue-600 focus-visible:rounded focus-visible:ring-2 focus-visible:ring-ring"
+            aria-label="Email"
+          >
+            <svg
+              viewBox="0 0 20 20"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="h-7 w-7"
+              aria-hidden="true"
             >
-              <svg
-                viewBox="0 0 20 20"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="h-7 w-7"
-                aria-hidden="true"
-              >
-                <rect x="2" y="4" width="16" height="12" rx="2" />
-                <title>Email</title>
-                <path d="M2 6l8 5 8-5" />
-              </svg>
-            </a>
-          )}
+              <rect x="2" y="4" width="16" height="12" rx="2" />
+              <title>Email</title>
+              <path d="M2 6l8 5 8-5" />
+            </svg>
+          </Link>
 
           {/* Divider */}
           <span className="text-gray-300">|</span>
