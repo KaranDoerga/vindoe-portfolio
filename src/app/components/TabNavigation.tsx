@@ -8,7 +8,7 @@ import AboutTab from './AboutTab'
 type TabType = 'developer' | 'beats' | 'about'
 
 export default function TabNavigation() {
-  const [activeTab, setActiveTab] = useState<TabType>('developer')
+  const [activeTab, setActiveTab] = useState<TabType>('about')
 
   // Handle URL hash on mount and hash changes
   useEffect(() => {
@@ -17,7 +17,7 @@ export default function TabNavigation() {
       if (['developer', 'beats', 'about'].includes(hash)) {
         return hash
       }
-      return 'developer'
+      return 'about'
     }
 
     setActiveTab(getTabFromHash())
@@ -42,6 +42,16 @@ export default function TabNavigation() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex space-x-8">
             <button
+              onClick={() => handleTabClick('about')}
+              className={`border-b-2 px-4 py-4 text-sm font-medium transition-colors ${
+                activeTab === 'about'
+                  ? 'border-red-500 text-red-500'
+                  : 'border-transparent text-gray-400 hover:border-gray-600 hover:text-gray-200'
+              }`}
+            >
+              👤 About
+            </button>
+            <button
               onClick={() => handleTabClick('developer')}
               className={`border-b-2 px-4 py-4 text-sm font-medium transition-colors ${
                 activeTab === 'developer'
@@ -61,16 +71,6 @@ export default function TabNavigation() {
             >
               🎵 Beats
             </button>
-            <button
-              onClick={() => handleTabClick('about')}
-              className={`border-b-2 px-4 py-4 text-sm font-medium transition-colors ${
-                activeTab === 'about'
-                  ? 'border-red-500 text-red-500'
-                  : 'border-transparent text-gray-400 hover:border-gray-600 hover:text-gray-200'
-              }`}
-            >
-              👤 About
-            </button>
           </div>
         </div>
       </nav>
@@ -87,6 +87,17 @@ export default function TabNavigation() {
       {/* Mobile Bottom Navigation */}
       <nav className="fixed bottom-16 left-0 right-0 border-t border-gray-200 bg-white md:hidden">
         <div className="grid grid-cols-3">
+          <button
+            onClick={() => handleTabClick('about')}
+            className={`flex flex-col items-center py-3 text-xs font-medium transition-colors ${
+              activeTab === 'about'
+                ? 'text-red-600'
+                : 'text-gray-500 hover:text-gray-700'
+            }`}
+          >
+            <span className="text-2xl">👤</span>
+            <span className="mt-1">About</span>
+          </button>
           <button
             onClick={() => handleTabClick('developer')}
             className={`flex flex-col items-center py-3 text-xs font-medium transition-colors ${
@@ -108,17 +119,6 @@ export default function TabNavigation() {
           >
             <span className="text-2xl">🎵</span>
             <span className="mt-1">Beats</span>
-          </button>
-          <button
-            onClick={() => handleTabClick('about')}
-            className={`flex flex-col items-center py-3 text-xs font-medium transition-colors ${
-              activeTab === 'about'
-                ? 'text-red-600'
-                : 'text-gray-500 hover:text-gray-700'
-            }`}
-          >
-            <span className="text-2xl">👤</span>
-            <span className="mt-1">About</span>
           </button>
         </div>
       </nav>

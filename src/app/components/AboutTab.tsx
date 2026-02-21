@@ -2,13 +2,42 @@ export default function AboutTab() {
   return (
     <div className="mx-auto max-w-3xl">
       <div className="space-y-8">
-        {/* Introduction */}
-        <section>
-          <h2 className="mb-4 text-2xl font-bold text-gray-900">Hey, ik ben Karan</h2>
-          <p className="text-lg leading-relaxed text-gray-700">
-            Ik ben een student software developer met een passie voor het creëren van intuïtieve webapplicaties.
-            Naast software ontwikkeling ben ik ook een beatmaker, waarbij ik mijn creativiteit uitdruk in de wereld van muziekproductie.
-          </p>
+        {/* Hero Section */}
+        <section
+          className="relative overflow-hidden rounded-2xl border border-gray-700 p-8 md:p-12"
+          style={{
+            background: 'linear-gradient(135deg, #1f2937 0%, #111827 100%)',
+          }}
+        >
+          {/* Decorative gradient overlay */}
+          <div
+            className="pointer-events-none absolute right-0 top-0 h-64 w-64 opacity-15"
+            style={{
+              background: 'radial-gradient(circle, #ef4444 0%, transparent 70%)',
+            }}
+          />
+
+          <div className="relative grid items-center gap-8 md:grid-cols-[auto_1fr] md:gap-10">
+            {/* Photo */}
+            <div className="mx-auto flex h-40 w-40 items-center justify-center rounded-2xl border-3 border-red-500 bg-gray-700 md:mx-0">
+              <span className="text-6xl text-gray-400">👤</span>
+            </div>
+
+            {/* Content */}
+            <div className="flex flex-col">
+              <p className="mb-2 text-sm uppercase tracking-wide text-gray-400">Karan Vindoe</p>
+              <h1 className="mb-2.5 text-3xl font-bold leading-tight text-white md:text-4xl">
+                Building & Creating in Code and Sound
+              </h1>
+              <p className="mb-4 text-lg font-medium text-red-500">
+                Software Developer • Beat Producer
+              </p>
+              <p className="text-sm leading-relaxed text-gray-300 md:text-base">
+                Ik ben een student software developer met een passie voor het creëren van intuïtieve webapplicaties.
+                Naast software ontwikkeling ben ik ook een beatmaker, waarbij ik mijn creativiteit uitdruk in de wereld van muziekproductie.
+              </p>
+            </div>
+          </div>
         </section>
 
         {/* Developer Journey */}
