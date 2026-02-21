@@ -1,6 +1,8 @@
+import Image from 'next/image';
+
 export default function AboutTab() {
   return (
-    <div className="mx-auto max-w-3xl">
+    <div className="mx-auto max-w-4xl">
       <div className="space-y-8">
         {/* Hero Section */}
         <section
@@ -19,13 +21,19 @@ export default function AboutTab() {
 
           <div className="relative grid items-center gap-8 md:grid-cols-[auto_1fr] md:gap-10">
             {/* Photo */}
-            <div className="mx-auto flex h-40 w-40 items-center justify-center rounded-2xl border-3 border-red-500 bg-gray-700 md:mx-0">
-              <span className="text-6xl text-gray-400">👤</span>
+            <div className="mx-auto flex h-60 w-60 items-center justify-center rounded-2xl border-3 border-red-400 md:mx-0">
+              <Image
+                src="/profile.jpg"
+                alt="Karan"
+                width={240}
+                height={240}
+                className="rounded-2xl object-cover"
+              />
             </div>
 
             {/* Content */}
             <div className="flex flex-col">
-              <p className="mb-2 text-sm uppercase tracking-wide text-gray-400">Karan Vindoe</p>
+              <p className="mb-2 text-sm uppercase tracking-wide text-gray-400">Karan</p>
               <h1 className="mb-2.5 text-3xl font-bold leading-tight text-white md:text-4xl">
                 Building & Creating in Code and Sound
               </h1>
