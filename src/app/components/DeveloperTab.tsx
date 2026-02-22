@@ -3,27 +3,27 @@ import ProjectCard from './ProjectCard'
 
 // Featured project - highlighted at the top
 const featuredProject = {
-  title: 'Portfolio Website',
-  description: 'A modern portfolio website showcasing my work as both a developer and beat producer.',
-  techStack: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS'],
-  githubUrl: 'https://github.com/vindoe/portfolio',
-  liveUrl: 'https://vindoe.dev',
-  imageUrl: undefined, // Optional: Add image URL here
+  title: 'Upcoming...',
+  description: 'Een spannend nieuw project is in de maak! Binnenkort zal ik een gloednieuw project onthullen dat momenteel in ontwikkeling is. Blijf op de hoogte voor meer details en een diepgaande blik op wat er komen gaat. Dit project belooft innovatief en boeiend te worden, dus zorg ervoor dat je het niet mist!',
+  techStack: ['Technologieën worden binnenkort onthuld!'],
+  githubUrl: '',
+  liveUrl: '',
+  imageUrl: 'https://victoriadelgadillo.com/wp-content/uploads/2020/11/upcoming.jpg'
 }
 
 // Other projects
 const otherProjects = [
   {
     title: 'Festival Travel System',
-    description: 'A web application for managing travel arrangements for music festivals.',
+    description: 'Een festival reissysteem gemaakt met Laravel voor een schoolproject. Het project omvatte het bouwen van een webapplicatie waarmee gebruikers reizen kunnen plannen en boeken voor verschillende festivals. De applicatie bevatte functies zoals het bekijken van beschikbare reizen, het boeken van reizen, en het beheren van boekingen. Het doel was om mijn vaardigheden in webontwikkeling te demonstreren en een functionele applicatie te creëren die gebruikers helpt bij het plannen van hun festivalervaring.',
     techStack: ['Laravel', 'PHP', 'MySQL', 'Blade'],
     githubUrl: 'https://github.com/KaranDoerga/ftsproject',
   },
   {
-    title: 'Project Three',
-    description: 'Description of your third project. Showcase your best work here.',
-    techStack: ['TypeScript', 'Next.js', 'API Integration'],
-    githubUrl: 'https://github.com/vindoe/project3',
+    title: 'Portfolio website (old)',
+    description: 'Een portfolio website gemaakt met PHP voor een schoolproject. Het project omvatte het bouwen van een persoonlijke portfolio website met PHP, HTML, CSS en MySQL. De website bevatte verschillende secties zoals een homepage, over mij, projecten en contactpagina. Het doel was om mijn vaardigheden in webontwikkeling te demonstreren en een platform te creëren om mijn werk te presenteren.',
+    techStack: ['PHP', 'HTML', 'CSS', 'MySQL'],
+    githubUrl: 'https://github.com/KaranDoerga/profileapp',
     liveUrl: 'https://project3.vindoe.dev',
   },
 ]
@@ -43,7 +43,7 @@ const frameworksAndTools = [
   { name: 'Node.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg' },
   { name: 'Tailwind CSS', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg' },
   { name: 'MySQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg' },
-  { name: 'Blade', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg' },
+  { name: 'Blade', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg' },
   { name: 'Git', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg' },
 ]
 
@@ -81,7 +81,7 @@ export default function DeveloperTab() {
                     href={featuredProject.liveUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="rounded-lg bg-red-600 px-5 py-2.5 font-semibold text-white transition-colors hover:bg-red-700"
+                    className="rounded-lg bg-red-600 px-5 py-2.5 font-semibold text-white transition-colors hover:bg-red-700 hover:cursor-not-allowed"
                   >
                     View Live
                   </a>
@@ -91,7 +91,7 @@ export default function DeveloperTab() {
                     href={featuredProject.githubUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="rounded-lg bg-red-600 px-5 py-2.5 font-semibold text-white transition-colors hover:bg-red-700"
+                    className="rounded-lg bg-red-600 px-5 py-2.5 font-semibold text-white transition-colors hover:bg-red-700 hover:cursor-not-allowed"
                   >
                     GitHub
                   </a>
