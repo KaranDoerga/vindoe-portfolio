@@ -1,0 +1,249 @@
+{
+  "featuredBeat": {
+    "title": "Featured Beat",
+    "youtubeUrl": "dQw4w9WgXcQ",
+    "tags": ["Shatta", "140 BPM", "Energy"]
+  },
+  "genreCollections": {
+    "Shatta": [
+      {
+        "title": "Shatta Energy",
+        "youtubeUrl": "dQw4w9WgXcQ",
+        "tags": ["140 BPM", "Party", "Dance"],
+        "uploadDate": "2024-02-20"
+      },
+      {
+        "title": "Shatta Vibes",
+        "youtubeUrl": "dQw4w9WgXcQ",
+        "tags": ["138 BPM", "Upbeat", "Club"],
+        "uploadDate": "2024-02-18"
+      },
+      {
+        "title": "Shatta Fire",
+        "youtubeUrl": "dQw4w9WgXcQ",
+        "tags": ["145 BPM", "Hard", "Energy"],
+        "uploadDate": "2024-02-22"
+      },
+      {
+        "title": "Shatta Wave",
+        "youtubeUrl": "dQw4w9WgXcQ",
+        "tags": ["142 BPM", "Dancehall", "Hot"],
+        "uploadDate": "2024-02-15"
+      },
+      {
+        "title": "Shatta Move",
+        "youtubeUrl": "dQw4w9WgXcQ",
+        "tags": ["140 BPM", "Groove", "Party"],
+        "uploadDate": "2024-02-10"
+      },
+      {
+        "title": "Shatta Riddim",
+        "youtubeUrl": "dQw4w9WgXcQ",
+        "tags": ["138 BPM", "Riddim", "Dance"],
+        "uploadDate": "2024-02-05"
+      },
+      {
+        "title": "Shatta Heat",
+        "youtubeUrl": "dQw4w9WgXcQ",
+        "tags": ["143 BPM", "Hot", "Club"],
+        "uploadDate": "2024-01-28"
+      },
+      {
+        "title": "Shatta Flex",
+        "youtubeUrl": "dQw4w9WgXcQ",
+        "tags": ["140 BPM", "Flex", "Energy"],
+        "uploadDate": "2024-01-20"
+      }
+    ],
+    "Kizomba": [
+      {
+        "title": "Kizomba Love",
+        "youtubeUrl": "dQw4w9WgXcQ",
+        "tags": ["95 BPM", "Romantic", "Smooth"],
+        "uploadDate": "2024-02-19"
+      },
+      {
+        "title": "Kizomba Soul",
+        "youtubeUrl": "dQw4w9WgXcQ",
+        "tags": ["90 BPM", "Soul", "Sensual"],
+        "uploadDate": "2024-02-12"
+      },
+      {
+        "title": "Kizomba Passion",
+        "youtubeUrl": "dQw4w9WgXcQ",
+        "tags": ["92 BPM", "Passion", "Love"],
+        "uploadDate": "2024-02-08"
+      },
+      {
+        "title": "Kizomba Night",
+        "youtubeUrl": "dQw4w9WgXcQ",
+        "tags": ["88 BPM", "Night", "Intimate"],
+        "uploadDate": "2024-02-01"
+      },
+      {
+        "title": "Kizomba Emotion",
+        "youtubeUrl": "dQw4w9WgXcQ",
+        "tags": ["93 BPM", "Emotional", "Deep"],
+        "uploadDate": "2024-01-25"
+      },
+      {
+        "title": "Kizomba Flow",
+        "youtubeUrl": "dQw4w9WgXcQ",
+        "tags": ["90 BPM", "Flow", "Smooth"],
+        "uploadDate": "2024-01-18"
+      }
+    ],
+    "Afro": [
+      {
+        "title": "Afrobeat Groove",
+        "youtubeUrl": "dQw4w9WgXcQ",
+        "tags": ["110 BPM", "Groove", "Dance"],
+        "uploadDate": "2024-02-17"
+      },
+      {
+        "title": "Afro Vibes",
+        "youtubeUrl": "dQw4w9WgXcQ",
+        "tags": ["108 BPM", "Vibes", "Party"],
+        "uploadDate": "2024-02-21"
+      },
+      {
+        "title": "Afro Energy",
+        "youtubeUrl": "dQw4w9WgXcQ",
+        "tags": ["115 BPM", "Energy", "Dance"],
+        "uploadDate": "2024-02-14"
+      },
+      {
+        "title": "Afro Wave",
+        "youtubeUrl": "dQw4w9WgXcQ",
+        "tags": ["112 BPM", "Wave", "Modern"],
+        "uploadDate": "2024-02-07"
+      },
+      {
+        "title": "Afro Fusion",
+        "youtubeUrl": "dQw4w9WgXcQ",
+        "tags": ["110 BPM", "Fusion", "Groove"],
+        "uploadDate": "2024-01-31"
+      },
+      {
+        "title": "Afro Dance",
+        "youtubeUrl": "dQw4w9WgXcQ",
+        "tags": ["114 BPM", "Dance", "Party"],
+        "uploadDate": "2024-01-24"
+      },
+      {
+        "title": "Afro Soul",
+        "youtubeUrl": "dQw4w9WgXcQ",
+        "tags": ["108 BPM", "Soul", "Smooth"],
+        "uploadDate": "2024-01-17"
+      }
+    ],
+    "Hiphop": [
+      {
+        "title": "Hip-Hop Classic",
+        "youtubeUrl": "dQw4w9WgXcQ",
+        "tags": ["90 BPM", "Classic", "Boom Bap"],
+        "uploadDate": "2024-02-16"
+      },
+      {
+        "title": "Hip-Hop Flow",
+        "youtubeUrl": "dQw4w9WgXcQ",
+        "tags": ["88 BPM", "Flow", "Smooth"],
+        "uploadDate": "2024-02-11"
+      },
+      {
+        "title": "Hip-Hop Vibes",
+        "youtubeUrl": "dQw4w9WgXcQ",
+        "tags": ["92 BPM", "Vibes", "Chill"],
+        "uploadDate": "2024-02-06"
+      },
+      {
+        "title": "Hip-Hop Beat",
+        "youtubeUrl": "dQw4w9WgXcQ",
+        "tags": ["95 BPM", "Modern", "Bounce"],
+        "uploadDate": "2024-01-30"
+      },
+      {
+        "title": "Hip-Hop Wave",
+        "youtubeUrl": "dQw4w9WgXcQ",
+        "tags": ["90 BPM", "Wave", "Cool"],
+        "uploadDate": "2024-01-23"
+      },
+      {
+        "title": "Hip-Hop Soul",
+        "youtubeUrl": "dQw4w9WgXcQ",
+        "tags": ["85 BPM", "Soul", "Jazz"],
+        "uploadDate": "2024-01-16"
+      }
+    ],
+    "R&B": [
+      {
+        "title": "R&B Smooth",
+        "youtubeUrl": "dQw4w9WgXcQ",
+        "tags": ["85 BPM", "Smooth", "Soul"],
+        "uploadDate": "2024-02-13"
+      },
+      {
+        "title": "R&B Vibes",
+        "youtubeUrl": "dQw4w9WgXcQ",
+        "tags": ["80 BPM", "Vibes", "Sensual"],
+        "uploadDate": "2024-02-09"
+      },
+      {
+        "title": "R&B Soul",
+        "youtubeUrl": "dQw4w9WgXcQ",
+        "tags": ["82 BPM", "Soul", "Emotion"],
+        "uploadDate": "2024-02-03"
+      },
+      {
+        "title": "R&B Love",
+        "youtubeUrl": "dQw4w9WgXcQ",
+        "tags": ["88 BPM", "Love", "Romantic"],
+        "uploadDate": "2024-01-27"
+      }
+    ],
+    "Trap": [
+      {
+        "title": "Trap Hard",
+        "youtubeUrl": "dQw4w9WgXcQ",
+        "tags": ["140 BPM", "Hard", "808s"],
+        "uploadDate": "2024-02-14"
+      },
+      {
+        "title": "Trap Vibes",
+        "youtubeUrl": "dQw4w9WgXcQ",
+        "tags": ["138 BPM", "Vibes", "Dark"],
+        "uploadDate": "2024-02-10"
+      },
+      {
+        "title": "Trap Beat",
+        "youtubeUrl": "dQw4w9WgXcQ",
+        "tags": ["145 BPM", "Heavy", "Bass"],
+        "uploadDate": "2024-02-04"
+      },
+      {
+        "title": "Trap Wave",
+        "youtubeUrl": "dQw4w9WgXcQ",
+        "tags": ["142 BPM", "Wave", "Melodic"],
+        "uploadDate": "2024-01-29"
+      },
+      {
+        "title": "Trap Energy",
+        "youtubeUrl": "dQw4w9WgXcQ",
+        "tags": ["140 BPM", "Energy", "Club"],
+        "uploadDate": "2024-01-22"
+      },
+      {
+        "title": "Trap Soul",
+        "youtubeUrl": "dQw4w9WgXcQ",
+        "tags": ["135 BPM", "Soul", "Emotional"],
+        "uploadDate": "2024-01-19"
+      },
+      {
+        "title": "Trap Fire",
+        "youtubeUrl": "dQw4w9WgXcQ",
+        "tags": ["143 BPM", "Fire", "Hard"],
+        "uploadDate": "2024-01-15"
+      }
+    ]
+  }
+}
