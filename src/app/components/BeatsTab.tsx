@@ -2,10 +2,9 @@ import YouTubeEmbed from './YouTubeEmbed'
 import BeatCard from './BeatCard'
 import { loadBeatsData } from '@/lib/beats'
 
-// Load beat data from JSON file
-const { featuredBeat, recentBeats, genreCollections } = loadBeatsData()
-
 export default function BeatsTab() {
+  // Load beat data from JSON file
+  const { featuredBeat, recentBeats, genreCollections } = loadBeatsData()
   return (
     <div className="space-y-12">
       {/* Featured Beat Section */}
