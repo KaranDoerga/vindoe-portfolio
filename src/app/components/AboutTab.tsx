@@ -23,7 +23,7 @@ export default function AboutTab() {
             {/* Photo */}
             <div className="mx-auto flex h-60 w-60 items-center justify-center rounded-2xl border-3 border-red-400 md:mx-0">
               <Image
-                src="/profile.jpg"
+                src="/me.jpg"
                 alt="Karan"
                 width={240}
                 height={240}
@@ -41,7 +41,7 @@ export default function AboutTab() {
                 Software Developer • Beat Producer
               </p>
               <p className="text-sm leading-relaxed text-gray-300 md:text-base">
-                Ik ben een student software developer met een passie voor het creëren van intuïtieve webapplicaties.
+                Hey, ik ben Karan en ik ben een student software developer met een passie voor het creëren van intuïtieve webapplicaties.
                 Naast software ontwikkeling ben ik ook een beatmaker, waarbij ik mijn creativiteit uitdruk in de wereld van muziekproductie.
               </p>
             </div>
