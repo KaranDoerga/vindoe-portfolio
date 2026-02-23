@@ -49,7 +49,7 @@ export default function TabNavigation() {
                   : 'border-transparent text-gray-400 hover:border-gray-600 hover:text-gray-200'
               }`}
             >
-              👤 About
+              👤 About Me
             </button>
             <button
               onClick={() => handleTabClick('developer')}
@@ -85,7 +85,7 @@ export default function TabNavigation() {
       </main>
 
       {/* Mobile Bottom Navigation */}
-      <nav className="fixed bottom-16 left-0 right-0 border-t border-gray-200 bg-white md:hidden">
+      <nav className="fixed bottom-12 left-0 right-0 border-t border-gray-200 bg-white md:hidden">
         <div className="grid grid-cols-3">
           <button
             onClick={() => handleTabClick('about')}
@@ -96,7 +96,7 @@ export default function TabNavigation() {
             }`}
           >
             <span className="text-2xl">👤</span>
-            <span className="mt-1">About</span>
+            <span className="mt-1">About Me</span>
           </button>
           <button
             onClick={() => handleTabClick('developer')}

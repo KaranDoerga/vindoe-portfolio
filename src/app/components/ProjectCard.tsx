@@ -16,7 +16,7 @@ export default function ProjectCard({
   return (
     <div className="group rounded-lg border border-gray-200 bg-gray-50 p-6 transition-all hover:border-red-600 hover:shadow-lg">
       <h3 className="text-xl font-bold text-gray-900">{title}</h3>
-      <p className="mt-2 text-sm text-gray-600 line-clamp-3">{description}</p>
+      <p className="mt-2 text-sm text-gray-600 line-clamp-8">{description}</p>
 
       {/* Tech Stack */}
       <div className="mt-4 flex flex-wrap gap-2">

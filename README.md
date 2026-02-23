@@ -20,6 +20,55 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Managing Beats
+
+All beat data is stored in `src/data/beats.json`. This makes it easy to add, update, or remove beats without editing component code.
+
+### Adding a New Beat
+
+1. Upload your beat to YouTube
+2. Copy the full YouTube URL (any format works)
+3. Open `src/data/beats.json`
+4. Navigate to the appropriate genre array (Shatta, Kizomba, Afro, Hiphop, R&B, or Trap)
+5. Add a new beat object:
+
+```json
+{
+  "title": "Your Beat Name",
+  "youtubeUrl": "https://www.youtube.com/watch?v=YOUR_VIDEO_ID",
+  "tags": ["140 BPM", "Energy", "Dance"],
+  "uploadDate": "2024-02-22"
+}
+```
+
+6. Save the file and rebuild the site with `npm run build`
+
+### Supported YouTube URL Formats
+
+The system automatically extracts video IDs from these formats:
+- Full URL: `https://www.youtube.com/watch?v=VIDEO_ID`
+- Short URL: `https://youtu.be/VIDEO_ID`
+- Embed URL: `https://www.youtube.com/embed/VIDEO_ID`
+- Direct ID: `VIDEO_ID`
+
+### Recent Beats Section
+
+The "Latest Beats" section automatically shows the 4 most recent beats based on the `uploadDate` field. Make sure to use the format `YYYY-MM-DD` (e.g., `2024-02-22`).
+
+### Changing the Featured Beat
+
+Edit the `featuredBeat` object at the top of `src/data/beats.json`:
+
+```json
+{
+  "featuredBeat": {
+    "title": "Your Featured Beat",
+    "youtubeUrl": "https://www.youtube.com/watch?v=YOUR_VIDEO_ID",
+    "tags": ["Shatta", "140 BPM", "Energy"]
+  }
+}
+```
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
