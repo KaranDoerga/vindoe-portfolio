@@ -50,7 +50,7 @@ export default function AboutTab() {
 
         {/* Developer Journey */}
         <section className="rounded-lg border border-green-200 bg-gray-50 p-6">
-          <h3 className="mb-3 text-xl font-bold text-gray-900">💻 Developer Journey</h3>
+          <h3 className="mb-3 text-xl font-bold text-gray-900">💻 Developer Carière</h3>
           <p className="leading-relaxed text-gray-700">
             Als student software developer ben ik voortdurend aan het leren en bouw ik projecten die me uitdagen om te groeien. 
             Ik heb met verschillende technologieën gewerkt, van frontend frameworks tot backend tools.
@@ -60,17 +60,17 @@ export default function AboutTab() {
 
         {/* Music Journey */}
         <section className="rounded-lg border border-purple-200 bg-gray-50 p-6">
-          <h3 className="mb-3 text-xl font-bold text-gray-900">🎵 Music Production</h3>
+          <h3 className="mb-3 text-xl font-bold text-gray-900">🎵 Muziekproductie</h3>
           <p className="leading-relaxed text-gray-700">
             Beatmaking is mijn creatieve uitlaatklep. 
-            Ik produceer beats in verschillende genres, met de focus op het creëren van unieke soundscapes en harde, pakkende ritmes. 
+            Ik produceer beats in verschillende genres, met de focus op het creëren van unieke stijlen en harde, pakkende ritmes. 
             Ik sta altijd open voor samenwerkingen en het delen van mijn muziek.
           </p>
         </section>
 
         {/* Current Status & Goals */}
         <section className="rounded-lg border border-blue-200 bg-gray-50 p-6">
-          <h3 className="mb-3 text-xl font-bold text-gray-900">🚀 Current Focus</h3>
+          <h3 className="mb-3 text-xl font-bold text-gray-900">🚀 Huidige Focus</h3>
           <p className="leading-relaxed text-gray-700">
             Op dit moment richt ik me op het uitbreiden van mijn technische vaardigheden, terwijl ik mijn unieke sound als producer blijf ontwikkelen. 
             Ik ben actief op zoek naar kansen om samen te werken, te leren van ervaren developers en in contact te komen met andere creators binnen zowel de tech- als de muziekindustrie.
@@ -79,7 +79,7 @@ export default function AboutTab() {
 
         {/* Call to Action */}
         <section className="rounded-lg border-2 border-orange-200 bg-orange-50 p-6 text-center">
-          <h3 className="mb-3 text-xl font-bold text-gray-900">Let's Connect</h3>
+          <h3 className="mb-3 text-xl font-bold text-gray-900">🤝 Connect 🤝</h3>
           <p className="leading-relaxed text-gray-700">
             Ik ben altijd geïnteresseerd in contact met andere developers, muzikanten en creators. 
             Of je nu wilt samenwerken aan een project, over tech wilt praten of gewoon wilt viben op wat beats, neem gerust contact op via één van de social links hieronder.
