@@ -24,7 +24,6 @@ const otherProjects = [
     description: 'Een portfolio website gemaakt met PHP voor een schoolproject. Het project omvatte het bouwen van een persoonlijke portfolio website met PHP, HTML, CSS en MySQL. De website bevatte verschillende secties zoals een homepage, over mij, projecten en contactpagina. Het doel was om mijn vaardigheden in webontwikkeling te demonstreren en een platform te creëren om mijn werk te presenteren.',
     techStack: ['PHP', 'HTML', 'CSS', 'MySQL'],
     githubUrl: 'https://github.com/KaranDoerga/profileapp',
-    liveUrl: 'https://project3.vindoe.dev',
   },
 ]
 

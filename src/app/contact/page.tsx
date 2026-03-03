@@ -40,14 +40,14 @@ export default function ContactPage() {
       const result = await sendContactEmail(data)
 
       if (result.success) {
-        toast.success("Message sent successfully! I'll get back to you soon.")
+        toast.success("Bericht succesvol verzonden! Ik neem zo snel mogelijk contact met je op.")
         reset()
       } else {
-        toast.error('Failed to send message. Please try again.')
+        toast.error('Er is iets misgegaan bij het verzenden van je bericht. Probeer het opnieuw.')
       }
     } catch (error) {
       console.error('Form submission error:', error)
-      toast.error('Failed to send message. Please try again.')
+      toast.error('Er is iets misgegaan bij het verzenden van je bericht. Probeer het opnieuw.')
     }
   }
 
